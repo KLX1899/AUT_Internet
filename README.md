@@ -23,4 +23,4 @@ open Command Prompt as an administrator; then
 ```
 \Your\Script\Directory\Path\Windows.bat
 ```
-
+- **NOTE:** Change the path<br>
