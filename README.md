@@ -6,9 +6,9 @@ You can use this script.
 ## How to Use?
 1. clone the repository
 2. run the commands which belongs to your OS<br>
-- **[MacOS](###MacOS)<br>**
-- **[Linux](###Linux)<br>**
-- **[Windows](###Windows)<br>**
+- **[MacOS](#Unix-based)<br>**
+- **[Linux](#Unix-based)<br>**
+- **[Windows](#Windows)<br>**
 <br>
 
 ### Unix-based
