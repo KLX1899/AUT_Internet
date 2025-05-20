@@ -5,7 +5,8 @@ You can use this script.
 <br>
 ## How to Use?
 1. clone the repository
-2. run the commands which belongs to your OS<br>
+2. enter your _username_ and _password_ in script
+3. run the commands which belongs to your OS<br>
 - **[MacOS](#Unix-based)<br>**
 - **[Linux](#Unix-based)<br>**
 - **[Windows](#Windows)<br>**
