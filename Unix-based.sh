@@ -18,7 +18,7 @@ SSID="$(iwgetid -r)"
 if ping -c 1 google.com > /dev/null 2>&1; then
     :
 else
-    if test "$SSID" = "CeWifi" || test "$SSID" = "CeWifi5G"; then
+    if test "$SSID" = "CeWifi" || test "$SSID" = "CeWifi 5G"; then
         echo "CE faculty's wifi disconnected :("
         /bin/bash "./main.sh"; !#
     else

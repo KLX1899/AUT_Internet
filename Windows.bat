@@ -32,7 +32,7 @@ if %errorlevel% equ 0 (
     if /i "!SSID!"=="CeWifi" (
         echo CE faculty's wifi disconnected :(
         call main.bat
-    ) else if /i "!SSID!"=="CeWifi5G" (
+    ) else if /i "!SSID!"=="CeWifi 5G" (
         echo CE faculty's wifi disconnected :(
         call main.bat
     ) else (
