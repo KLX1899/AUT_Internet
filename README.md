@@ -16,11 +16,34 @@ You can use this script.
 ```
 cd Your/Script/Directory/Path
 sudo chmod 755 Unix-based.sh
-./Unix-based.sh
+crontab -e
 ```
 - **NOTE:** Change the path<br>
+
+Add the following directive at the end of the file:
+```
+15 * * * * /Your/Script/Directory/Path/Unix-based.sh
+```
+- **NOTE:** You can set the period as you wish. [more](https://www.freecodecamp.org/news/cron-jobs-in-linux/#:~:text=Below%20is%20the%20summary%20of%20the%20cron%20job%20syntax.)<br>
+
+Save and close the file.
+
+List all Cron jobs and verify that the new Bash script task is available:
+```
+crontab -l
+```
+If the output looks like this, everything is OK:
+```
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+
+15 * * * * /Your/Script/Directory/Path/Unix-based.sh
+```
+
 ### Windows
-open Command Prompt as an administrator; then
+open Command Prompt as an administrator; then:
 ```
 \Your\Script\Directory\Path\Windows.bat
 ```
