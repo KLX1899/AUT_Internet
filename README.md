@@ -16,30 +16,24 @@ You can use this script.
 ```
 cd Your/Script/Directory/Path
 sudo chmod 755 Unix-based.sh
-crontab -e
+./Unix-based.sh
 ```
 - **NOTE:** Change the path<br>
 
-Add the following directive at the end of the file:
-```
-15 * * * * /Your/Script/Directory/Path/Unix-based.sh
-```
-- **NOTE:** You can set the period as you wish. [more](https://www.freecodecamp.org/news/cron-jobs-in-linux/#:~:text=Below%20is%20the%20summary%20of%20the%20cron%20job%20syntax.)<br>
+On the first run, the script will prompt you for your username and password, like this:
+![username](/images/userpass.png)
 
-Save and close the file.
+But for future runs, it’s not necessary.
 
-List all Cron jobs and verify that the new Bash script task is available:
+For future runs, you can simply use this alias. Run these commands in your terminal:
 ```
-crontab -l
+cd
+echo "\n\nalias autwifi='Your/Script/Directory/Path/Unix-based.sh'"
 ```
-If the output looks like this, everything is OK:
-```
-# 
-# For more information see the manual pages of crontab(5) and cron(8)
-# 
-# m h  dom mon dow   command
 
-15 * * * * /Your/Script/Directory/Path/Unix-based.sh
+Now you can simply run the script by typing this alias in the terminal:
+```
+autwifi
 ```
 
 ### Windows
